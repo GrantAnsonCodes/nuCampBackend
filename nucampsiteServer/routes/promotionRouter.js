@@ -28,7 +28,7 @@ promotionRouter.route('/:promotionId')
 .put(authenticate.verifyUser, (req, res) => {
     res.end(`Will update the promotion: ${req.body.name} with description: $ ${req.body.description}`)
 })
-.delete(authenticate.verifyUser, (req,res) => {
+.delete(authenticate.verifyUser, (req, res) => {
     res.end('Deleting promotion!');
 })
 
